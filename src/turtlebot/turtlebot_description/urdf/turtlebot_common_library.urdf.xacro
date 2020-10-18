@@ -6,4 +6,6 @@
   <!-- General -->
   <xacro:include filename="$(find turtlebot_description)/urdf/common_properties.urdf.xacro"/>
   <xacro:include filename="$(find turtlebot_description)/urdf/turtlebot_properties.urdf.xacro"/>
+ <!--  Hokuyo Laser Sensor-->
+ <xacro:include filename="$(find turtlebot_description)/urdf/sensors/hokuyo.urdf.xacro"/>
 </robot>
