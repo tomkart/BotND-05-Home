@@ -10,7 +10,7 @@ source devel/setup.bash
 
 ```
 
-**Mapping**
+**1. Mapping**
 ```
 ./src/scripts/test_slam.sh 
 
@@ -18,13 +18,13 @@ source devel/setup.bash
 Drive the robot around to scan the map
 ![Mapping](test_slam.gif)
 
-Open another terminal
-Then, launch the teleop node:
+**2. Localization and Navigation
+Kill all previous terminals and open a new one
 ```
 cd ~/BotND-05-Map
 source devel/setup.bash
-rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+./src/scripts/test_navigation.sh 
 ```
-
-
+Using "2D Nav Goal" 
+![Navigation](test_navigation.gif)
 
