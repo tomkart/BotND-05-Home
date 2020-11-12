@@ -15,7 +15,8 @@ source devel/setup.bash
 ./src/scripts/test_slam.sh 
 
 ```
-![Gazebo and RViz](BotND-04-Map-Gazebo.png)
+Drive the robot around to scan the map
+![Mapping](test_slam.gif)
 
 Open another terminal
 Then, launch the teleop node:
