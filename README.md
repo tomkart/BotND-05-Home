@@ -40,13 +40,15 @@ Inside pick_objects.sh, pick_objects_node is called and sending goal requests to
 ```
 **3. Home Service Functions**
 Part 1 - Create virtual objects with markers
+
 Inside add_markers (add_shapes.cpp), it sends messages to visualization_marker to display a cube.
 
 ```
 ./src/scripts/add_marker.sh 
 ```
 ![Add Maker](add_marker.png)
-Part 2 - Home service 
+Part 2 - Home service
+
 For the final part, the robot state is published inside pick_objects_node.cpp. A publisher is used to send the "state" in uint8_t.
 ```
   //pub
