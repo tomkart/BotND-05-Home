@@ -56,9 +56,11 @@ int main( int argc, char** argv )
       {
         return 0;
       }
-      ROS_WARN_ONCE("Please create a subscriber to the marker");
+      ROS_WARN_ONCE("Wait for subscriber to the marker");
       sleep(1);
     }
+	// Publish the marker
+	ROS_INFO("Pusblish pickup marker");
     marker_pub.publish(marker);
 
     sleep(10);
@@ -66,7 +68,8 @@ int main( int argc, char** argv )
     marker.pose.position.x = 3;
     marker.pose.position.y = -3;
 
-    marker.lifetime = ros::Duration(10); 
+    marker.lifetime = ros::Duration(10);
+    ROS_INFO("Pusblish dropoff marker"); 
     marker_pub.publish(marker);
 
     sleep(10);
