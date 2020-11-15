@@ -40,6 +40,7 @@ Part 1 - Create virtual object with markers
 ```
 ./src/scripts/add_marker.sh 
 ```
+![Add Maker](add_marker.png)
 Part 2 - Home service 
 ```
 ./src/scripts/home_service.sh 
