@@ -26,8 +26,6 @@ Part 1 - Navigation stack
 
 Kill all previous terminals and open a new one
 ```
-cd ~/BotND-05-Map
-source devel/setup.bash
 ./src/scripts/test_navigation.sh 
 ```
 Using "2D Nav Goal" 
@@ -35,7 +33,15 @@ Using "2D Nav Goal"
 
 Part 2 - Goal node function 
 ```
-cd ~/BotND-05-Map
-source devel/setup.bash
 ./src/scripts/pick_objects.sh 
 ```
+**3. Home Service Functions**
+Part 1 - Create virtual object with markers
+```
+./src/scripts/add_marker.sh 
+```
+Part 2 - Home service 
+```
+./src/scripts/home_service.sh 
+```
+
