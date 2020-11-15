@@ -63,8 +63,8 @@ int main( int argc, char** argv )
 
     sleep(10);
 
-    marker.pose.position.x = 0;
-    marker.pose.position.y = 3;
+    marker.pose.position.x = 3;
+    marker.pose.position.y = -3;
 
     marker.lifetime = ros::Duration(10); 
     marker_pub.publish(marker);
