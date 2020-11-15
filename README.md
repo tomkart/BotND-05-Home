@@ -46,7 +46,10 @@ Inside add_markers (add_shapes.cpp), it sends messages to visualization_marker t
 ```
 ./src/scripts/add_marker.sh 
 ```
-![Add Maker](add_marker.png)
+Here is the video on showing how it works in the video link below.
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=_Jr07Kxx5NY" target="_blank"><img src="http://img.youtube.com/vi/_Jr07Kxx5NY/0.jpg" 
+alt="Home Service" border="5" /></a>
+
 Part 2 - Home service  
   
 For the final part, the robot state is published inside pick_objects_node.cpp. A publisher is used to send the "state" in uint8_t.
