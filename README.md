@@ -46,3 +46,6 @@ Part 2 - Home service
 ./src/scripts/home_service.sh 
 ```
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=0ej-wyt03KI
+" target="_blank"><img src="http://img.youtube.com/vi/0ej-wyt03KI/0.jpg" 
+alt="Home Service" border="5" /></a>
