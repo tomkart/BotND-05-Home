@@ -21,9 +21,9 @@ Gmapping is used for mapping. We can drive the robot around to scan the map and 
 
 ![Mapping](test_slam.gif)
 
-**2. Localization and Navigation**
-Part 1 - Navigation stack 
-
+**2. Localization and Navigation**  
+Part 1 - Navigation stack  
+  
 Kill all previous terminals and open a new one
 ```
 ./src/scripts/test_navigation.sh 
@@ -32,14 +32,14 @@ amcl is used here for localization and navigating the robot on the saved 2D map.
 
 ![Navigation](test_navigation.gif)
 
-Part 2 - Goal node function 
+Part 2 - Goal node function   
 Inside pick_objects.sh, pick_objects_node is called and sending goal requests to the move_base server through a SimpleActionClient
 
 ```
 ./src/scripts/pick_objects.sh 
 ```
-**3. Home Service Functions**
-Part 1 - Create virtual objects with markers
+**3. Home Service Functions**  
+Part 1 - Create virtual objects with markers  
 
 Inside add_markers (add_shapes.cpp), it sends messages to visualization_marker to display a cube.
 
@@ -47,8 +47,8 @@ Inside add_markers (add_shapes.cpp), it sends messages to visualization_marker t
 ./src/scripts/add_marker.sh 
 ```
 ![Add Maker](add_marker.png)
-Part 2 - Home service
-
+Part 2 - Home service  
+  
 For the final part, the robot state is published inside pick_objects_node.cpp. A publisher is used to send the "state" in uint8_t.
 ```
   //pub
@@ -77,8 +77,8 @@ When the robot has reached the dropoff point, it will publish "arrived_dropoff"
     state_pub.publish(state);
   }
 ```
-For the marker, we need to subscribe to the "state" and display/remove the marker accordingly.
-
+For the marker, we need to subscribe to the "state" and display/remove the marker accordingly.  
+  
 In pick_shapes.cpp, it subscribed to "state" and call "stateCallback" when there is a new message.
 ```
 ros::Subscriber substate = n.subscribe("state", 100, stateCallback);
