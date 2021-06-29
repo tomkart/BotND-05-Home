@@ -25,7 +25,7 @@
     </link>
     <joint name="hokuyo_joint" type="fixed">
       <!--<axis xyz="0 0 1" />-->
-      <origin xyz="0.08 0 0.430" rpy="0 0 0"/>
+      <origin xyz="0.08 0 0.16" rpy="0 0 0"/>
       <parent link="${parent}"/>
       <child link="hokuyo_link"/>
      </joint>
